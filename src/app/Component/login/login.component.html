@@ -1,1 +1,26 @@
-<p>login works!</p>
+
+<div class="container-fluid mycontainer">
+  <form [formGroup]="loginform" (ngSubmit)="login()">
+    <div>
+        <h1 class="text-center text-danger fw-bolder fs-3">User Login</h1>
+        </div>
+    <div class="mb-3">
+        <label for="emailid" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="id1">
+        <div id="emailHelp" class="form-text text-secondary">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="id2">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="id3">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+        <div class="d-grid gap-2 mx-auto">
+            <button class="btn btn-primary" type="button">Login</button>
+            <div id="emailHelp" class="form-text text-center text-primary" >Not Registered User? SignUp Now</div>
+            <button class="btn btn-primary" type="button" routerLink="/signup"> SignUp</button>
+          </div>
+        </form>
+</div>
